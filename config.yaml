@@ -16,66 +16,66 @@ dns:
     fake-ip-filter: ['*.lan', '*.localdomain', '*.example', '*.invalid', '*.localhost', '*.test', '*.local', '*.home.arpa', 'time.*.com', 'time.*.gov', 'time.*.edu.cn', 'time.*.apple.com', 'time1.*.com', 'time2.*.com', 'time3.*.com', 'time4.*.com', 'time5.*.com', 'time6.*.com', 'time7.*.com', 'ntp.*.com', 'ntp1.*.com', 'ntp2.*.com', 'ntp3.*.com', 'ntp4.*.com', 'ntp5.*.com', 'ntp6.*.com', 'ntp7.*.com', '*.time.edu.cn', '*.ntp.org.cn', +.pool.ntp.org, time1.cloud.tencent.com, music.163.com, '*.music.163.com', '*.126.net', musicapi.taihe.com, music.taihe.com, songsearch.kugou.com, trackercdn.kugou.com, '*.kuwo.cn', api-jooxtt.sanook.com, api.joox.com, joox.com, y.qq.com, '*.y.qq.com', streamoc.music.tc.qq.com, mobileoc.music.tc.qq.com, isure.stream.qqmusic.qq.com, dl.stream.qqmusic.qq.com, aqqmusic.tc.qq.com, amobile.music.tc.qq.com, '*.xiami.com', '*.music.migu.cn', music.migu.cn, +.msftconnecttest.com, +.msftncsi.com, msftconnecttest.com, msftncsi.com, localhost.ptlogin2.qq.com, localhost.sec.qq.com, +.srv.nintendo.net, +.stun.playstation.net, 'xbox.*.microsoft.com', xnotify.xboxlive.com, +.ipv6.microsoft.com, +.battlenet.com.cn, +.wotgame.cn, +.wggames.cn, +.wowsgame.cn, +.wargaming.net, proxy.golang.org, 'stun.*.*', 'stun.*.*.*', '+.stun.*.*', '+.stun.*.*.*', '+.stun.*.*.*.*', heartbeat.belkin.com, '*.linksys.com', '*.linksyssmartwifi.com', '*.router.asus.com', mesu.apple.com, swscan.apple.com, swquery.apple.com, swdownload.apple.com, swcdn.apple.com, swdist.apple.com, lens.l.google.com, stun.l.google.com, '*.square-enix.com', '*.finalfantasyxiv.com', '*.ffxiv.com', '*.ff14.sdo.com', ff.dorado.sdo.com, '*.mcdn.bilivideo.cn', +.media.dssott.com, +.pvp.net]
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: 三线-高速-香港-L, type: ss, server: 103.40.255.12, port: 9205, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 三线-高速-香港-M3, type: ss, server: 103.40.255.29, port: 9207, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 三线-高速-香港-M2, type: ss, server: 103.40.255.21, port: 9206, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 三线-高速-香港-N3, type: ss, server: 103.40.255.9, port: 9207, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 三线-高速-香港-N4, type: ss, server: 103.40.255.9, port: 9208, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 三线-高速-香港-M, type: ss, server: 103.40.255.21, port: 9205, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 三线-高速-香港-N2, type: ss, server: 103.40.255.10, port: 9206, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 三线-高速-香港-M4, type: ss, server: 103.40.255.29, port: 9208, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 三线-高速-香港-N, type: ss, server: 103.40.255.10, port: 9205, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 电信-高速-香港-D, type: ss, server: 59.36.239.253, port: 9205, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 移动-高速-香港-D, type: ss, server: 183.232.227.173, port: 9205, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 联通-高速-香港-D, type: ss, server: 157.148.99.14, port: 9205, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 联通-高速-香港-E, type: ss, server: 157.148.99.1, port: 9205, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 电信-高速-香港-E, type: ss, server: 59.36.239.250, port: 9205, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 意大利-A, type: ss, server: 122.13.138.13, port: 21113, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 意大利-A1, type: ss, server: 59.36.239.251, port: 21113, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 意大利-B, type: ss, server: 59.36.239.251, port: 21120, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 意大利-B1, type: ss, server: 183.232.227.175, port: 21120, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 韩国-B, type: ss, server: 59.36.239.251, port: 21107, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 韩国-B1, type: ss, server: 183.232.227.175, port: 21107, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 越南-B, type: ss, server: 122.13.138.13, port: 21111, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 越南-B1, type: ss, server: 59.36.239.251, port: 21111, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 英国-B, type: ss, server: 122.13.138.13, port: 21117, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 英国-B1, type: ss, server: 59.36.239.251, port: 21117, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 印度-C, type: ss, server: 183.232.227.175, port: 21125, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 印度-C1, type: ss, server: 59.36.239.251, port: 21125, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 英国-A, type: ss, server: 59.36.239.251, port: 21104, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 英国-A1, type: ss, server: 183.232.227.175, port: 21104, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 越南-A, type: ss, server: 59.36.239.251, port: 21124, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 越南-A1, type: ss, server: 183.232.227.175, port: 21124, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 日本-D, type: ss, server: 122.13.138.13, port: 21119, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 日本-D1, type: ss, server: 59.36.239.251, port: 21119, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 日本-B, type: ss, server: 122.13.138.13, port: 21109, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 日本-B1, type: ss, server: 59.36.239.251, port: 21109, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 法国-C, type: ss, server: 59.36.239.251, port: 21126, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 法国-C1, type: ss, server: 183.232.227.175, port: 21126, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 法国-B, type: ss, server: 183.232.227.175, port: 21122, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 法国-B1, type: ss, server: 59.36.239.251, port: 21122, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 西班牙-A, type: ss, server: 59.36.239.251, port: 21115, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 德国-A, type: ss, server: 59.36.239.251, port: 21118, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 以色列-A, type: ss, server: 59.36.239.251, port: 21116, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 韩国-C, type: ss, server: 122.13.138.13, port: 21114, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 韩国-C1, type: ss, server: 59.36.239.251, port: 21114, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 印度-A, type: ss, server: 122.13.138.13, port: 21103, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 印度-A1, type: ss, server: 59.36.239.251, port: 21103, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 美国-B, type: ss, server: 122.13.138.13, port: 21108, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 美国-B1, type: ss, server: 59.36.239.251, port: 21108, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 美国-A, type: ss, server: 59.36.239.251, port: 21105, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 美国-A1, type: ss, server: 183.232.227.175, port: 21105, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 移动-高速-香港-E, type: ss, server: 183.232.227.170, port: 9205, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 马来西亚-A, type: ss, server: 59.36.239.251, port: 21112, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 马来西亚-A1, type: ss, server: 183.232.227.175, port: 21112, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 新加坡-C, type: ss, server: 183.232.227.175, port: 21121, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
-    - { name: 新加坡-B, type: ss, server: 122.13.138.13, port: 21110, cipher: chacha20-ietf-poly1305, password: c4ea78a0-7ea7-44c4-8a85-89705509861e, udp: true }
+    - { name: 三线-高速-香港-M, type: ss, server: 103.40.255.21, port: 9205, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 三线-高速-香港-L, type: ss, server: 103.40.255.12, port: 9205, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 三线-高速-香港-N4, type: ss, server: 103.40.255.9, port: 9208, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 三线-高速-香港-N, type: ss, server: 103.40.255.10, port: 9205, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 三线-高速-香港-M2, type: ss, server: 103.40.255.21, port: 9206, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 三线-高速-香港-N2, type: ss, server: 103.40.255.10, port: 9206, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 三线-高速-香港-N3, type: ss, server: 103.40.255.9, port: 9207, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 三线-高速-香港-M3, type: ss, server: 103.40.255.29, port: 9207, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 三线-高速-香港-M4, type: ss, server: 103.40.255.29, port: 9208, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 电信-高速-香港-E, type: ss, server: 59.36.239.250, port: 9205, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 联通-高速-香港-E, type: ss, server: 157.148.99.1, port: 9205, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 电信-高速-香港-D, type: ss, server: 59.36.239.253, port: 9205, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 联通-高速-香港-D, type: ss, server: 157.148.99.14, port: 9205, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 移动-高速-香港-D, type: ss, server: 183.232.227.173, port: 9205, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 意大利-A, type: ss, server: 122.13.138.13, port: 21113, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 意大利-A1, type: ss, server: 59.36.239.251, port: 21113, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 意大利-B, type: ss, server: 59.36.239.251, port: 21120, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 意大利-B1, type: ss, server: 183.232.227.175, port: 21120, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 越南-B, type: ss, server: 122.13.138.13, port: 21111, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 越南-B1, type: ss, server: 59.36.239.251, port: 21111, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 韩国-B, type: ss, server: 59.36.239.251, port: 21107, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 韩国-B1, type: ss, server: 183.232.227.175, port: 21107, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 越南-A, type: ss, server: 59.36.239.251, port: 21124, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 越南-A1, type: ss, server: 183.232.227.175, port: 21124, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 英国-A, type: ss, server: 59.36.239.251, port: 21104, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 英国-B, type: ss, server: 122.13.138.13, port: 21117, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 英国-A1, type: ss, server: 183.232.227.175, port: 21104, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 英国-B1, type: ss, server: 59.36.239.251, port: 21117, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 印度-C, type: ss, server: 183.232.227.175, port: 21125, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 印度-C1, type: ss, server: 59.36.239.251, port: 21125, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 法国-C, type: ss, server: 59.36.239.251, port: 21126, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 法国-C1, type: ss, server: 183.232.227.175, port: 21126, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 日本-D, type: ss, server: 122.13.138.13, port: 21119, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 日本-D1, type: ss, server: 59.36.239.251, port: 21119, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 日本-B, type: ss, server: 122.13.138.13, port: 21109, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 日本-B1, type: ss, server: 59.36.239.251, port: 21109, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 以色列-A, type: ss, server: 59.36.239.251, port: 21116, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 法国-B, type: ss, server: 183.232.227.175, port: 21122, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 法国-B1, type: ss, server: 59.36.239.251, port: 21122, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 西班牙-A, type: ss, server: 59.36.239.251, port: 21115, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 德国-A, type: ss, server: 59.36.239.251, port: 21118, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 韩国-C, type: ss, server: 122.13.138.13, port: 21114, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 韩国-C1, type: ss, server: 59.36.239.251, port: 21114, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 印度-A, type: ss, server: 122.13.138.13, port: 21103, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 印度-A1, type: ss, server: 59.36.239.251, port: 21103, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 美国-B, type: ss, server: 122.13.138.13, port: 21108, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 美国-B1, type: ss, server: 59.36.239.251, port: 21108, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 移动-高速-香港-E, type: ss, server: 183.232.227.170, port: 9205, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 美国-A, type: ss, server: 59.36.239.251, port: 21105, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 美国-A1, type: ss, server: 183.232.227.175, port: 21105, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 马来西亚-A, type: ss, server: 59.36.239.251, port: 21112, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 马来西亚-A1, type: ss, server: 183.232.227.175, port: 21112, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 新加坡-C, type: ss, server: 183.232.227.175, port: 21121, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
+    - { name: 新加坡-B, type: ss, server: 122.13.138.13, port: 21110, cipher: chacha20-ietf-poly1305, password: d13d19df-6f1a-46dc-bf8a-0b1407c57c0c, udp: true }
 proxy-groups:
-    - { name: 橘猫666, type: select, proxies: [自动选择, 故障转移, 境内使用, 海外使用, 联通-香港-极速, 电信-香港-极速, 移动-香港-极速, 固定香港, 意大利, 韩国-高速, 越南-高速, 英国-高速, 印度-高速, 日本-高速, 法国-高速, 西班牙, 德国, 以色列, 美国-高速, 马来西亚, 新加坡-高速] }
-    - { name: 自动选择, type: url-test, proxies: [三线-高速-香港-M3, 三线-高速-香港-M2, 三线-高速-香港-N3, 三线-高速-香港-N4, 三线-高速-香港-M, 三线-高速-香港-N2, 三线-高速-香港-M4, 电信-高速-香港-D, 移动-高速-香港-D, 联通-高速-香港-D, 联通-高速-香港-E, 电信-高速-香港-E, 移动-高速-香港-E], url: 'http://www.gstatic.com/generate_204', interval: 600 }
-    - { name: 故障转移, type: fallback, proxies: [三线-高速-香港-L, 三线-高速-香港-M3, 三线-高速-香港-M2, 三线-高速-香港-N3, 三线-高速-香港-N4, 三线-高速-香港-M, 三线-高速-香港-N2, 三线-高速-香港-M4, 三线-高速-香港-N, 电信-高速-香港-D, 移动-高速-香港-D, 联通-高速-香港-D, 联通-高速-香港-E, 电信-高速-香港-E, 意大利-A, 意大利-A1, 意大利-B, 意大利-B1, 韩国-B, 韩国-B1, 越南-B, 越南-B1, 英国-B, 英国-B1, 印度-C, 印度-C1, 英国-A, 英国-A1, 越南-A, 越南-A1, 日本-D, 日本-D1, 日本-B, 日本-B1, 法国-C, 法国-C1, 法国-B, 法国-B1, 西班牙-A, 德国-A, 以色列-A, 韩国-C, 韩国-C1, 印度-A, 印度-A1, 美国-B, 美国-B1, 美国-A, 美国-A1, 移动-高速-香港-E, 马来西亚-A, 马来西亚-A1, 新加坡-C, 新加坡-B], url: 'http://www.gstatic.com/generate_204', interval: 600 }
-    - { name: 境内使用, type: url-test, proxies: [三线-高速-香港-L, 三线-高速-香港-M3, 三线-高速-香港-M2, 三线-高速-香港-N3, 三线-高速-香港-N4, 三线-高速-香港-M, 三线-高速-香港-N2, 三线-高速-香港-M4, 三线-高速-香港-N, 电信-高速-香港-D, 移动-高速-香港-D, 联通-高速-香港-D, 联通-高速-香港-E, 电信-高速-香港-E, 移动-高速-香港-E], url: 'http://www.gstatic.com/generate_204', interval: 600 }
-    - { name: 海外使用, type: url-test, proxies: [意大利-A, 意大利-A1, 意大利-B, 意大利-B1, 韩国-B, 韩国-B1, 越南-B, 越南-B1, 英国-B, 英国-B1, 印度-C, 印度-C1, 英国-A, 英国-A1, 越南-A, 越南-A1, 日本-D, 日本-D1, 日本-B, 日本-B1, 法国-C, 法国-C1, 法国-B, 法国-B1, 西班牙-A, 德国-A, 以色列-A, 韩国-C, 韩国-C1, 印度-A, 印度-A1, 美国-B, 美国-B1, 美国-A, 美国-A1, 马来西亚-A, 马来西亚-A1, 新加坡-C, 新加坡-B], url: 'http://www.gstatic.com/generate_204', interval: 600 }
+    - { name: 橘猫666, type: select, proxies: [自动选择, 故障转移, 境内使用, 海外使用, 联通-香港-极速, 电信-香港-极速, 移动-香港-极速, 固定香港, 意大利, 越南-高速, 韩国-高速, 英国-高速, 印度-高速, 法国-高速, 日本-高速, 以色列, 西班牙, 德国, 美国-高速, 马来西亚, 新加坡-高速] }
+    - { name: 自动选择, type: url-test, proxies: [三线-高速-香港-M, 三线-高速-香港-N4, 三线-高速-香港-M2, 三线-高速-香港-N2, 三线-高速-香港-N3, 三线-高速-香港-M3, 三线-高速-香港-M4, 电信-高速-香港-E, 联通-高速-香港-E, 电信-高速-香港-D, 联通-高速-香港-D, 移动-高速-香港-D, 移动-高速-香港-E], url: 'http://www.gstatic.com/generate_204', interval: 600 }
+    - { name: 故障转移, type: fallback, proxies: [三线-高速-香港-M, 三线-高速-香港-L, 三线-高速-香港-N4, 三线-高速-香港-N, 三线-高速-香港-M2, 三线-高速-香港-N2, 三线-高速-香港-N3, 三线-高速-香港-M3, 三线-高速-香港-M4, 电信-高速-香港-E, 联通-高速-香港-E, 电信-高速-香港-D, 联通-高速-香港-D, 移动-高速-香港-D, 意大利-A, 意大利-A1, 意大利-B, 意大利-B1, 越南-B, 越南-B1, 韩国-B, 韩国-B1, 越南-A, 越南-A1, 英国-A, 英国-B, 英国-A1, 英国-B1, 印度-C, 印度-C1, 法国-C, 法国-C1, 日本-D, 日本-D1, 日本-B, 日本-B1, 以色列-A, 法国-B, 法国-B1, 西班牙-A, 德国-A, 韩国-C, 韩国-C1, 印度-A, 印度-A1, 美国-B, 美国-B1, 移动-高速-香港-E, 美国-A, 美国-A1, 马来西亚-A, 马来西亚-A1, 新加坡-C, 新加坡-B], url: 'http://www.gstatic.com/generate_204', interval: 600 }
+    - { name: 境内使用, type: url-test, proxies: [三线-高速-香港-M, 三线-高速-香港-L, 三线-高速-香港-N4, 三线-高速-香港-N, 三线-高速-香港-M2, 三线-高速-香港-N2, 三线-高速-香港-N3, 三线-高速-香港-M3, 三线-高速-香港-M4, 电信-高速-香港-E, 联通-高速-香港-E, 电信-高速-香港-D, 联通-高速-香港-D, 移动-高速-香港-D, 移动-高速-香港-E], url: 'http://www.gstatic.com/generate_204', interval: 600 }
+    - { name: 海外使用, type: url-test, proxies: [意大利-A, 意大利-A1, 意大利-B, 意大利-B1, 越南-B, 越南-B1, 韩国-B, 韩国-B1, 越南-A, 越南-A1, 英国-A, 英国-B, 英国-A1, 英国-B1, 印度-C, 印度-C1, 法国-C, 法国-C1, 日本-D, 日本-D1, 日本-B, 日本-B1, 以色列-A, 法国-B, 法国-B1, 西班牙-A, 德国-A, 韩国-C, 韩国-C1, 印度-A, 印度-A1, 美国-B, 美国-B1, 美国-A, 美国-A1, 马来西亚-A, 马来西亚-A1, 新加坡-C, 新加坡-B], url: 'http://www.gstatic.com/generate_204', interval: 600 }
     - { name: Netflix, type: select, proxies: [橘猫666] }
     - { name: 磁力下载, type: select, proxies: [DIRECT] }
     - { name: 哔哩哔哩, type: select, proxies: [DIRECT] }
@@ -90,20 +90,20 @@ proxy-groups:
     - { name: Copilot, type: select, proxies: [境内使用] }
     - { name: TikTok, type: select, proxies: [海外使用] }
     - { name: ChatGPT, type: select, proxies: [海外使用] }
-    - { name: 联通-香港-极速, type: fallback, proxies: [三线-高速-香港-L, 三线-高速-香港-M3, 三线-高速-香港-M2, 三线-高速-香港-N3, 三线-高速-香港-N4, 三线-高速-香港-M, 三线-高速-香港-N2, 三线-高速-香港-M4, 三线-高速-香港-N, 联通-高速-香港-D, 联通-高速-香港-E], url: 'http://www.gstatic.com/generate_204', interval: 600 }
-    - { name: 电信-香港-极速, type: fallback, proxies: [三线-高速-香港-L, 三线-高速-香港-M3, 三线-高速-香港-M2, 三线-高速-香港-N3, 三线-高速-香港-N4, 三线-高速-香港-M, 三线-高速-香港-N2, 三线-高速-香港-M4, 三线-高速-香港-N, 电信-高速-香港-D, 电信-高速-香港-E], url: 'http://www.gstatic.com/generate_204', interval: 600 }
-    - { name: 移动-香港-极速, type: fallback, proxies: [三线-高速-香港-L, 三线-高速-香港-M3, 三线-高速-香港-M2, 三线-高速-香港-N3, 三线-高速-香港-N4, 三线-高速-香港-M, 三线-高速-香港-N2, 三线-高速-香港-M4, 三线-高速-香港-N, 移动-高速-香港-D, 移动-高速-香港-E], url: 'http://www.gstatic.com/generate_204', interval: 600 }
-    - { name: 固定香港, type: fallback, proxies: [三线-高速-香港-L, 三线-高速-香港-N, 电信-高速-香港-D, 移动-高速-香港-D, 联通-高速-香港-D, 联通-高速-香港-E, 电信-高速-香港-E, 移动-高速-香港-E], url: 'http://www.gstatic.com/generate_204', interval: 600 }
+    - { name: 联通-香港-极速, type: fallback, proxies: [三线-高速-香港-M, 三线-高速-香港-L, 三线-高速-香港-N4, 三线-高速-香港-N, 三线-高速-香港-M2, 三线-高速-香港-N2, 三线-高速-香港-N3, 三线-高速-香港-M3, 三线-高速-香港-M4, 联通-高速-香港-E, 联通-高速-香港-D], url: 'http://www.gstatic.com/generate_204', interval: 600 }
+    - { name: 电信-香港-极速, type: fallback, proxies: [三线-高速-香港-M, 三线-高速-香港-L, 三线-高速-香港-N4, 三线-高速-香港-N, 三线-高速-香港-M2, 三线-高速-香港-N2, 三线-高速-香港-N3, 三线-高速-香港-M3, 三线-高速-香港-M4, 电信-高速-香港-E, 电信-高速-香港-D], url: 'http://www.gstatic.com/generate_204', interval: 600 }
+    - { name: 移动-香港-极速, type: fallback, proxies: [三线-高速-香港-M, 三线-高速-香港-L, 三线-高速-香港-N4, 三线-高速-香港-N, 三线-高速-香港-M2, 三线-高速-香港-N2, 三线-高速-香港-N3, 三线-高速-香港-M3, 三线-高速-香港-M4, 移动-高速-香港-D, 移动-高速-香港-E], url: 'http://www.gstatic.com/generate_204', interval: 600 }
+    - { name: 固定香港, type: fallback, proxies: [三线-高速-香港-L, 三线-高速-香港-N, 电信-高速-香港-E, 联通-高速-香港-E, 电信-高速-香港-D, 联通-高速-香港-D, 移动-高速-香港-D, 移动-高速-香港-E], url: 'http://www.gstatic.com/generate_204', interval: 600 }
     - { name: 意大利, type: fallback, proxies: [意大利-A, 意大利-A1, 意大利-B, 意大利-B1], url: 'http://www.gstatic.com/generate_204', interval: 600 }
-    - { name: 韩国-高速, type: fallback, proxies: [韩国-B, 韩国-B1, 韩国-C, 韩国-C1], url: 'http://www.gstatic.com/generate_204', interval: 600 }
     - { name: 越南-高速, type: fallback, proxies: [越南-B, 越南-B1, 越南-A, 越南-A1], url: 'http://www.gstatic.com/generate_204', interval: 600 }
-    - { name: 英国-高速, type: fallback, proxies: [英国-B, 英国-B1, 英国-A, 英国-A1], url: 'http://www.gstatic.com/generate_204', interval: 600 }
+    - { name: 韩国-高速, type: fallback, proxies: [韩国-B, 韩国-B1, 韩国-C, 韩国-C1], url: 'http://www.gstatic.com/generate_204', interval: 600 }
+    - { name: 英国-高速, type: fallback, proxies: [英国-A, 英国-B, 英国-A1, 英国-B1], url: 'http://www.gstatic.com/generate_204', interval: 600 }
     - { name: 印度-高速, type: fallback, proxies: [印度-C, 印度-C1, 印度-A, 印度-A1], url: 'http://www.gstatic.com/generate_204', interval: 600 }
-    - { name: 日本-高速, type: fallback, proxies: [日本-D, 日本-D1, 日本-B, 日本-B1], url: 'http://www.gstatic.com/generate_204', interval: 600 }
     - { name: 法国-高速, type: fallback, proxies: [法国-C, 法国-C1, 法国-B, 法国-B1], url: 'http://www.gstatic.com/generate_204', interval: 600 }
+    - { name: 日本-高速, type: fallback, proxies: [日本-D, 日本-D1, 日本-B, 日本-B1], url: 'http://www.gstatic.com/generate_204', interval: 600 }
+    - { name: 以色列, type: fallback, proxies: [以色列-A], url: 'http://www.gstatic.com/generate_204', interval: 600 }
     - { name: 西班牙, type: fallback, proxies: [西班牙-A], url: 'http://www.gstatic.com/generate_204', interval: 600 }
     - { name: 德国, type: fallback, proxies: [德国-A], url: 'http://www.gstatic.com/generate_204', interval: 600 }
-    - { name: 以色列, type: fallback, proxies: [以色列-A], url: 'http://www.gstatic.com/generate_204', interval: 600 }
     - { name: 美国-高速, type: fallback, proxies: [美国-B, 美国-B1, 美国-A, 美国-A1], url: 'http://www.gstatic.com/generate_204', interval: 600 }
     - { name: 马来西亚, type: fallback, proxies: [马来西亚-A, 马来西亚-A1], url: 'http://www.gstatic.com/generate_204', interval: 600 }
     - { name: 新加坡-高速, type: fallback, proxies: [新加坡-C, 新加坡-B], url: 'http://www.gstatic.com/generate_204', interval: 600 }
